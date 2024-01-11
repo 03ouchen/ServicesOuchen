@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouchen-Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">-->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    
+</head>
+<body>
+    <!-- Main Menu-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="Site logo">
+            <h1 class="logo-text">OuchenServices</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="ouchenservices-nav-link nav-link active" aria-current="page" href="#search-form">Search</a>
+              <a class="ouchenservices-nav-link  nav-link" href="#services">Services</a>
+              <a class="ouchenservices-nav-link  nav-link" href="#recommends">Recommends</a>
+              <a class="ouchenservices-nav-link  nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Search Form-->
+    <div id="search-form" class="hero">
+        <div class="container">
+            <form action="index.html" method="get" class="search-form">
+
+                <div class="form-group" style="flex: 100%;">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" name="city" class="form-control" placeholder="Type your distination">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-bed"></i>
+                    <select class="form-control">
+                        <option value="">Rooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-user"></i>
+                    <select class="form-control">
+                        <option value="">Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-user"></i>
+                    <select class="form-control">
+                        <option value="">Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Check</button>
+                </div>
+            </form>
+            <p class="need-help">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, soluta.
+                <a href="#">Need Help ?</a>
+            </p>
+        </div>
+    </div>
+
+    <!--Subscribe -->
+    <section class="section-color">
+        <div class="container text-center">
+            <h2 class="section-title">We are here to Help you</h2>
+            <p class="section-subtitle">Subscribe to get our Newsletters</p>
+            <a href="#" class="btn btn-white">Subscribe Newsletters</a>
+        </div>
+    </section>
+
+    <!--Services-->
+    <section id="services">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="section-down-arrow">
+            <polygon fill="var(--color-primary)" points="0,0  100,0  50,50"></polygon>
+        </svg>
+
+        <div class="container">
+            <div class="row">
+                <article class="article col-lg-4">
+                    <i class="fa fa-legal article-icon"></i>
+                    <h3 class="article-title">Level Html Template by Tooplate website</h3>
+                    <p>You are allowed to download, edit and use this template for your busniss or client website</p>
+                    <a href="#" class="btn btn-primary btn-fit">Continue Reading </a>
+
+                </article>
+
+                <article class="article col-lg-4">
+                    <i class="fa fa-plane article-icon"></i>
+                    <h3 class="article-title">Original website template producer</h3>
+                    <p>You are allowed to download, edit and use this template for your busniss or client website</p>
+                    <a href="#" class="btn btn-primary btn-fit">Continue Reading </a>
+                </article>
+
+                <article class="article col-lg-4">
+                    <i class="fa fa-life-saver article-icon"></i>
+                    <h3 class="article-title">Contact us if you have any quastions</h3>
+                    <p>You are allowed to download, edit and use this template for your busniss or client website</p>
+                    <a href="#" class="btn btn-primary btn-fit">Continue Reading </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Slider-->
+    <section class="section-gray" id="recommends">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    
+                    <div class="level-slider">
+
+                        <article class="level-slider-item">
+                            <img src="./assets/images/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae debitis ex alias excepturi vitae, incidunt soluta quia.</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/images/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sapiente dolore, ipsum vitae quod magni.</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/images/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta sit molestias hic sunt autem, quod quo commodi harum minima?</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/images/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem possimus commodi?</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more</a>
+                            </div>
+                        </article>
+                          
+                        <article class="level-slider-item">
+                            <img src="./assets/images/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/images/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id pariatur beatae necessitatibus quaerat, repudiandae consectetur vero.</p>
+                                <a href="" class="btn btn-primary btn-fit">Get more</a>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="star-places">
+                        <div class="star-places-header">
+                            <h3>Recommended Places</h3>
+                            <p>Places that we recommended for you</p>
+                        </div>
+
+                        <div class="star-places-body">
+                            <a href="#">
+                                <img src="./assets/images/tn-img-01.jpg" alt="place image">
+                                <h4>Europe</h4>
+                            </a>
+
+                            <a href="#">
+                                <img src="./assets/images/tn-img-02.jpg" alt="place image">
+                                <h4>Asia</h4>
+                            </a>
+
+                            <a href="#">
+                                <img src="./assets/images/tn-img-03.jpg" alt="place image">
+                                <h4>Africa</h4>
+                            </a>
+
+                            <a href="#">
+                                <img src="./assets/images/tn-img-04.jpg" alt="place image">
+                                <h4>America</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Video-->
+    <section class="video">
+
+        <div class="vedio-overlay">
+            <i class="fa fa-play-circle video-control-play"></i>
+            <i class="fa fa-pause-circle video-control-pause"></i>
+        </div>
+
+        <div class="video-container">
+            <video class="ouchen-video">
+                <source src="./assets/videos/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <!--Contact Form-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621781.019298195!2d12.176656053877542!3d52.50027867440199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sfr!2sde!4v1704984875730!5m2!1sfr!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="" class="Contact-form">
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+                            <i class="fa fa-user"></i>
+                        </div>
+        
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Email" required>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+        
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Subject" required>
+                            <i class="fa fa-book"></i>
+                        </div>
+        
+                        <div class="form-group">
+                            <textarea type="text" name="" id="" class="form-control" rows="9" placeholder="Message" required></textarea>
+                            <i class="fa fa-commenting"></i>
+                        </div>
+        
+                        <button type="submit" class="btn btn-primary">Send Message Now</button>
+        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="conatiner">
+            <p>Copyright &copy; 2024 .Ing :
+                <a rel="follow" href="https://github.com/03ouchen/Azzeddine-Ouchen-Portfolio">Ouchen Azzeddine</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+    
+<script src="./assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
